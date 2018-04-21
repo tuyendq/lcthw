@@ -31,7 +31,7 @@ int main(int argc, char *argv[])
 	printf("The number of chars: %ld\n",
 		sizeof(full_name) / sizeof(char));
 
-	printf("name=\"%s\" and fule_name=\"%s\"\n",
+	printf("name=\"%s\" and full_name=\"%s\"\n",
 		name, full_name);
 
 	return 0;
