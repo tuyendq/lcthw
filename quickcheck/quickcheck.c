@@ -1,5 +1,15 @@
 #include <stdio.h>
 
+// Check integer overflow
+int main() {
+	int num = 50000;
+	int result = num * num;
+	printf ("Result: %d", result);
+	
+	return 0;
+}
+
+/*
 int main (){
    int x = 0, y = 1;
    if (x || !y)
@@ -17,6 +27,7 @@ int main (){
    }
 
 }
+*/
 
 /*
 int main (){
