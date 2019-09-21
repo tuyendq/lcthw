@@ -1,1 +1,2 @@
-Learn C the Hard Way
+# Learn C the Hard Way
+## Author: Zed Shaw
