@@ -13,14 +13,14 @@
 char response[] = "HTTP/1.1 200 OK \r\n"
 "Content-Type: text/html; charset=UTF-8\r\n\r\n"
 "<!DOCTYPE html><html><<head><title>Bye-bye baby bye-bye</title>"
-"<style>body { background-color: #111 }"
+"<style>body { background-color: #FFF }"
 "h1 { font-size: 4rem; text-align: center; color: #000;"
 " text-shadow: 0 0 2px red }</style></head>"
 "<body><h1>Goodbye, world!</h1></body></html>\r\n";
 
 int main(int argc, char *argv[])
 {
-    int one =1, client_fd;
+    int one = 1, client_fd;
     struct sockaddr_in svr_addr, cli_addr;
     socklen_t sin_len = sizeof(cli_addr);
 
@@ -28,11 +28,11 @@ int main(int argc, char *argv[])
     if (sock < 0)
         err(1, "can't open socket");
     
-    setsockopt(sock, SOL_SOCKET, SO_REUSERADDR, &one, sizeof(int));
+    setsockopt(sock, SOL_SOCKET, SO_REUSEADDR, &one, sizeof(int));
 
     int port = 8080;
     svr_addr.sin_family = AF_INET;
-    svr_addr.sin_address.s_addr = INADDR_ANY;
+    svr_addr.sin_addr.s_addr = INADDR_ANY;
     svr_addr.sin_port = htons(port);
 
     if (bind(sock, (struct sockaddr *) &svr_addr, sizeof(svr_addr)) == -1) {
