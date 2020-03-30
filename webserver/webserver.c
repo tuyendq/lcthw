@@ -12,7 +12,7 @@
 
 char response[] = "HTTP/1.1 200 OK \r\n"
 "Content-Type: text/html; charset=UTF-8\r\n\r\n"
-"<!DOCTYPE html><html><<head><title>Bye-bye baby bye-bye</title>"
+"<!DOCTYPE html><html><head><title>Bye-bye baby bye-bye</title>"
 "<style>body { background-color: #FFF }"
 "h1 { font-size: 4rem; text-align: center; color: #000;"
 " text-shadow: 0 0 2px red }</style></head>"
