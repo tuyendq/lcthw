@@ -53,3 +53,5 @@ dkms.conf
 
 # Windows executable files
 **/*.exe
+
+**/.vscode
